@@ -1,0 +1,60 @@
+h2 {
+    color: blue;
+}
+
+p {
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: overline;
+    text-decoration: none;
+
+    /* Lorem Ipsum Dolor Sit Amet,  */
+    text-transform: capitalize; 
+    text-transform: uppercase; 
+    text-transform: lowercase; 
+    text-transform: none; 
+
+    line-height: 20px;
+    line-height: normal;
+
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* 
+        google fonts: https://fonts.google.com/
+        index.html/<head>: 
+            <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    */
+    font-family: 'Poiret One', cursive;
+    font-style: normal;
+    font-weight: normal;
+}
+
+img {
+    /* image will float left of the text that follow it */
+    float: left; 
+}
+footer {
+    /* clear previous float on other elements (not under) */
+    clear: both;
+    text-align: center;
+}
+.boxmodel {
+    border: 5px solid red;
+    display: inline-block;
+    padding: 5px 20px 5px 20px; /* top right bottom left */
+    margin: 0 10px;             /* equiv to 0 10px 0 10px */ 
+    width: 33px;
+    height: 55px;
+    text-align: center;
+}
+
+/* will overwrite previous p { ... } */
+p {
+    font-size: 20px;
+}
+
+#mylorem {
+    font-size: 2em; /* 5 times the containing elem */
+}

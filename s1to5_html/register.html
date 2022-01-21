@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <div> <!-- <div> allows us to add content and divide the document into modular pieces -->
+        <form method="GET"> 
+            <!-- method="GET" by default -->
+            <!-- POST: passed in the body -->
+            <span>First Name: </span><input type="text" name="firstname"><br>
+            Last Name: <input type="text" name="lastname"><br>
+            Email: <input type="email" name="email" required><br>
+            Password: <input type="password" name="password" minlength="5"><br>
+            Birthday: <input type="date" name="birthday"><br>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br>
+            Pets: <br>
+            <input type="checkbox" name="dog">Dog<br>
+            <input type="checkbox" name="cat">Cat<br>
+            Cars: <br>
+            <select> <!-- <select multiple> -->
+                <option value="volvo" name="volvo" value="volvo">Volvo</option>
+                <option value="audi" name="audi" value="audi">Audi</option>
+            </select>
+            <input type='submit' value="Register!">
+            <input type="reset">
+        </form>
+    </div>
+</body>
+</html>
+<!-- 
+    http://127.0.0.1:5500/register.html
+    ?
+    firstname=Bruno
+    &lastname=Jullien
+    &email=bruno.jullien%40gmail.com
+    &password=mypassword
+    &birthday=1964-06-11
+    &gender=on
+    &dog=on 
+
+    NOTES: %40 is URL encoding for '@' character
+-->

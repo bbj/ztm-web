@@ -1,0 +1,88 @@
+/* 
+    align everything to the right
+    it is overwritten below for h2, p
+*/
+* {
+    text-align: right;
+}
+
+body {
+    background-image: url("zetong-li-8DILjg7UIME-unsplash.jpg");
+    background-size: cover;
+}
+
+h2, p {
+    color: #801515; /* hex format */
+    text-align: center;
+    /* border: 5px solid #D46A6A; */
+    /* rgb(212,106,106) is same color */
+    /* 0.5 is the opacity; rgba() a: alpha */
+    border: 5px solid rgba(212, 106, 106, 0.5);
+    cursor: pointer; /* show a pointer cussor instead */
+}
+
+/* p under h2, not directly under */
+h2 p {
+    color: white;
+    text-align: left;
+}
+
+/* p directly under h2, h2 is parent of p */
+h2 > p {
+    color: black;
+    text-align: right;
+}
+
+/* p is right after the h2, sibling */
+h2 + p {
+    color: yellow;
+    text-align: right;
+}
+
+p:first-child {
+    color: yellow; /* hex format */
+}
+
+p:last-child {
+    color: purple; /* hex format */
+}
+
+p:nth-child(2) {
+    border-style: solid;    
+}
+
+p {
+    color: pink; /* this one is overwritten by next */
+}
+
+/*  CSS: Cascaded Style Sheet 
+    => always take latest in this file => green */
+p {
+    color: #550000; 
+}
+
+h2, p:hover {
+    color: black; /* hex format */
+}
+
+li {
+    list-style: none; /* no more dots */
+    display: inline-block; /* horizontal Links */
+}
+
+.webtext {
+    border: 3px dashed green;
+}
+
+.active {
+    color: red;
+    font-weight: bold;
+}
+
+#div1 {
+    background: rgba(212, 106, 106, 0.5);
+}
+
+#div2 {
+    background: rgba(0, 0, 256, 0.2);
+}

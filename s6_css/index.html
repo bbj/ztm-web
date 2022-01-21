@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- 
+    we can also have inline style below but not good 
+    according to the principal "separation of concerns"
+  -->
+  <style>
+    li {
+      background-color: #AA3939;
+      color: #550000;
+    }
+  </style>  
+</head>
+<body>
+  <button class="btn btn-primary">Default</button>
+  <!-- header has an inline style -->
+  <header style="background-color: #FFAAAA;color:white">
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2>Home
+      <div>
+        <p>I am under h2 (h2 p)</p>
+      </div>
+      <p>I am directly under h2 (h2 > p)</p>
+    </h2>
+    <p>I am right after h2 (h2 + p)</p>
+
+    <div id="div1">
+      <p class="webtext active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorum, consequuntur hic vitae nam nulla eius sequi aperiam doloribus nostrum labore saepe ad facere dolorem minima autem obcaecati ea explicabo!</p>
+      <p class="webtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="webtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.</p>    
+    </div>
+    <div id="div2">
+      <p class="webtext active">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="webtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="webtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.</p>    
+    </div>
+  </section>
+</body>
+</html>
