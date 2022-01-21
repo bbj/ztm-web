@@ -33,6 +33,10 @@ p {
 
 img {
     /* image will float left of the text that follow it */
+    /* surrounding boxmodel "inline" elements will wrap around */
+    /* The element is removed from the normal flow of the page, 
+       though still remaining a part of the flow 
+       (in contrast to absolute positioning). */
     float: left; 
 }
 footer {
@@ -57,4 +61,5 @@ p {
 
 #mylorem {
     font-size: 2em; /* 5 times the containing elem */
+    font-size: 5rem; /* 5 times the root elem <html> */
 }

@@ -8,6 +8,8 @@
 
 body {
     background-image: url("zetong-li-8DILjg7UIME-unsplash.jpg");
+
+    /* fit the container width, proportionally, cropping if needed */
     background-size: cover;
 }
 
